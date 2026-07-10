@@ -30,7 +30,7 @@
           time.timeZone = "UTC";
           services.tailscale = {
             enable = true;
-            #extraUpFlags = [ "--ssh" "--login-server=" ];
+            extraUpFlags = [ "--ssh=true" "--login-server=https://tails.loranjennings.com" ];
           };
 
           users.users.nixguard = {
